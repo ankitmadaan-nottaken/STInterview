@@ -24,3 +24,13 @@ Run "mvn test" to run the test. The test will check for Feature files in "src/te
 5. getElement() and getElements() methods in BaseModule, read a String as an argument and returns a WebElement based on the String. If it starts with "//", it is considered an xpath and returns driver.findElement(By.xpath(locator)), if it starts with "css=", it uses driver.findElement(By.cssSelector(locator)) and so on. It makes it easier to manage xpaths and if the locators change, we only have to change the String variable and the tests/page methods do not have to change.
 6. The Project uses Cucumber's test runner and is glued to the pages package, where it looks for all Step definitions for Cucumber's Feature file.
 7. The feature file(s) are in the test package itself and we can introduce tags in the future to run specific tags in the feature files e.g @SmokeTest could be a tag. Currently, it runs all feature files serially. 
+8. If the scenraio fails, a screenshot is automatically taken and embedded to "target\cucumber-html-report"
+
+#Workaround for Verification Code Email
+Salesforce developer, sends a verification code to your email address every time you login from a new IP or a browser which has not cached the session. As a workaround, you can use IP whitelisting to add your IP and it will not send a verification code if Salesforce developer is opened from that IP
+
+setup -> Security Controls -> Network Access -> New Button.
+For know your IP address: enter below website in you URL - 
+http://www.whatismyip.com/
+
+Otherwise, Java Mail API (https://javaee.github.io/javamail/) can be used to get the content of the email by creating a session with your SMTP server.
