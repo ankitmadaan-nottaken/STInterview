@@ -42,7 +42,7 @@ public class HomePage extends BaseModule{
 				break;
 			}
 		}
-		Assert.assertTrue(isSearchResult);;
+		Assert.assertFalse(isSearchResult);;
 	}
 	
 	@When("^Navigate to \"([^\"]*)\" Page$")
