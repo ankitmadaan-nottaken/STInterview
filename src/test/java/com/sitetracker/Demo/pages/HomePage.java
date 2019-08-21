@@ -32,7 +32,7 @@ public class HomePage extends BaseModule{
 		SendKeys(getElement(SEARCH_INPUT), text, "Search for "+text, true);
 	}
 	
-	@Then("^Assert \"([^\"]*)\" is listed$")
+	@Then("^\"([^\"]*)\" is listed$")
 	public void isTestPageListed(String text) {
 		Boolean isSearchResult = false;
 		List<WebElement> searchResultList = getElements(SEARCH_RESULT);

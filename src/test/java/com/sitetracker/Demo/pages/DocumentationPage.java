@@ -1,9 +1,7 @@
 package com.sitetracker.Demo.pages;
 
-
 import org.junit.Assert;
 import org.openqa.selenium.support.PageFactory;
-
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -30,7 +28,7 @@ public class DocumentationPage extends BaseModule{
 	 * THERE IS NO SOFTASSERT in Junit, so using Assert. .Can use SoftAssert with TestNG as well
 	 * @return
 	 */
-	@Then("^Verify Testing Apex Page is Loaded$")
+	@Then("^Testing Apex Page is Loaded$")
 	public void isTestingApexPage() {
 		Assert.assertTrue(getElement(TOPIC_TITLE).getText().equals("Testing Apex"));
 	}
