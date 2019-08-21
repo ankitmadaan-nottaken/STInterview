@@ -33,4 +33,4 @@ setup -> Security Controls -> Network Access -> New Button.
 For know your IP address: enter below website in you URL - 
 http://www.whatismyip.com/
 
-Otherwise, Java Mail API (https://javaee.github.io/javamail/) can be used to get the content of the email by creating a session with your SMTP server.
+Otherwise, Java Mail API (https://javaee.github.io/javamail/) can be used to get the content of the email by creating a session with your SMTP server and adding Selenium code to enter that verification code
