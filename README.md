@@ -26,7 +26,7 @@ Run "mvn test" to run the test. The test will check for Feature files in "src/te
 7. The feature file(s) are in the test package itself and we can introduce tags in the future to run specific tags in the feature files e.g @SmokeTest could be a tag. Currently, it runs all feature files serially. 
 8. If the scenraio fails, a screenshot is automatically taken and embedded to "target\cucumber-html-report"
 
-#Workaround for Verification Code Email
+# Workaround for Verification Code Email
 Salesforce developer, sends a verification code to your email address every time you login from a new IP or a browser which has not cached the session. As a workaround, you can use IP whitelisting to add your IP and it will not send a verification code if Salesforce developer is opened from that IP
 
 setup -> Security Controls -> Network Access -> New Button.
