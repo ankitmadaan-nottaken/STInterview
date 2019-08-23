@@ -16,6 +16,8 @@ Note: Currently I have hardcoded the browser to be Chrome and the location of th
 
 Run "mvn test" to run the test. The test will check for Feature files in "src/test/java/com/sitetracker/Demo/tests/Features" folder and run Scenario(s) in the feature file. 
 
+You can use your own Salesforce account to run the tests just by changing the username and password in the Feature file "src/test/java/com/sitetracker/Demo/tests/Features/MyTest.feature"
+
 ## Technical Explanation
 1. The Demo Project is written in Page Object Model design pattern, where "com.sitetracker.Demo.pages" and "com.sitetracker.Demo.tests" are different packages and if there is a change in the UI, the tests do not have to be changed.
 2. BaseTestSuite.java in pages package, instantiates the driver using Cucumber's @Before annotation and opens the browser before running every scenario. Similarly, using @After annotation, the browser is closed after every scenario.
